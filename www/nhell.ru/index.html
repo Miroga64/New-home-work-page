@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing-page</title>
+	<meta charset="utf-8">
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+	<base target="_blank">
+</head>
+<body>
+<div class="telephone-form">
+	<div class="telephone-form__main-form">
+			<h4>Заказать звонок</h4>
+			<button id="telephone-form__close"></button>
+		<form method="post">
+			<label for="Guest-name">Введите ФИО<span title="Обязательно для заполнения">*</span></label>
+			<input type="text" required autofocus="autofocus" name="Guest-name" id="Guest-name" placeholder="Иванов Иван Иванович">
+			<label for="Guest-number">Введите номер телефона<span title="Обязательно для заполнения">*</span></label>
+			<input type="text" required placeholder="+7 (xxx) xxx-xxxx" id="Guest-number" pattern="[+]7([0-9]{,3})[0-9]{,3}-[0-9]{,4}">
+			<input type="submit"name="Guest-submit" id="Guest-submit" value="Заказать Звонок"><br>
+			<input type="checkbox" required name="Personal-data" id="Personal-data"><label for="Personal-data" id="label-personal-data"><span>*</span>Я даю согласие на обработку персональных данных</label>
+		</form>
+	</div>
+</div>
+<header>
+	<div class="elements e1">{ }</div>
+	<div class="elements e2">#</div>
+	<div class="elements e3">{ }</div>
+	<div class="elements e4">&lt;/&gt;</div>
+	<div class="elements e5">&lt;div&gt;</div>
+	<div class="elements e6">&lt;div&gt;</div>	
+	<div class="main-container" id="header_main_container_info">
+		<div id="info">
+			<button id="menu_button"></button>
+			<button id="menu-button-close"></button>
+			<nav id="header_menu_mobile">
+				<a href="#"><div class="main-container__menu-mobile"id="services_header_header">Услуги</div></a>
+				<a href="#"><div class="main-container__menu-mobile" id="portfolio_header">Портфолио</div></a>
+				<a href="#"><div class="main-container__menu-mobile" id="cost_header">Стоимость</div></a>
+			</nav>
+			<nav id="menu_header">
+				<a href="#my_work"><div class="main-container__menu" id="services_header">Услуги</div></a>
+				<a href="#my_projects"><div class="main-container__menu" id="portfolio">Портфолио</div></a>
+				<a href="#Price"><div class="main-container__menu" id="cost">Стоимость</div></a>
+			</nav>
+			<div id="contacts_header">
+				<a href="tel:+79170413038" id="telephone_number_header">+7 (917) 041-30-38</a>
+				<button class="main-container__order-call">Заказать звонок</button>
+				<button id="order_call_mobile">
+					<i class="fas fa-phone" id="phone_icon_header"></i>
+					<i class="fas fa-phone fa-lg" id="phone_icon_header_big"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="main-container" id="header_main_container">
+		<div id="header">
+			<h2>Михаил Гайсин</h2>
+			<div class="main-container__profession">Frontend-разработчик и веб-верстальщик</div>
+			<button class="header__more">Узнать Больше</button>
+		</div>
+		<div id="my_photo">
+			<img src="img/myphoto.png" id="myphoto" alt='My Photo'>
+		</div>
+	</div>
+</header>
+<div id="header_mobile">
+			<h2>Михаил Гайсин</h2>
+			<div class="main-container__profession">Frontend-разработчик и веб-верстальщик</div>
+			<button class="header__more" >Узнать Больше</button>
+</div>
+<div id="my_work">
+	<div class="main-container">
+		<h3>Что я делаю</h3>
+		<div id="my_work_icon">
+			<div class="main-container__icon" id="first">Верстка лендинг-страниц и&nbsp;сайтов любой сложности</div>
+			<div class="main-container__icon" id="second">Адаптивная верстка под все браузеры и устройства</div>
+			<div class="main-container__icon" id="third">Frontend-разработка и программирование</div>
+			<div class="main-container__icon" id="fourth">Исправление и доработка существующей верстки</div>
+		</div>
+		<button class="header__more">Узнать стоимость</button>
+	</div>
+</div>
+<div id="my_projects">
+	<div class="main-container">
+		<h3>Примеры моих работ</h3>
+		<img src="img/arrow_l.png" id="arrow_r" class="main-container__arrows" alt="Swipe Left">
+		<img src="img/arrow_r.png" id="arrow_l" class="main-container__arrows" alt="Swipe Right">
+		<div id="example">
+			<div class="main-container__projects" id="project1">Сайт психолога Веры Антоновой</div>
+			<div class="main-container__projects" id="project2">Сайт психолога Веры Антоновой</div>
+			<div class="main-container__projects" id="project3">Сайт психолога Веры Антоновой</div>
+			<div class="main-container__projects" id="project4">Сайт психолога Веры Антоновой</div>
+		</div>
+		<div id="switchers">
+			<div class="main-container__switch" id="switch1"></div>
+			<div class="main-container__switch" id="switch2"></div>
+			<div class="main-container__switch" id="switch3"></div>
+			<div class="main-container__switch" id="switch4"></div>
+		</div>
+		<button class="header__more">Заказать проект</button>
+	</div>	
+</div>
+<div id="Price">
+	<div class="price__elements pe1">{ }</div>
+	<div class="price__elements pe2">#</div>
+	<div class="price__elements pe3">&lt;div&gt;</div>
+	<div class="price__elements pe4">&lt;/&gt;</div>
+	<div class="price__elements pe5">{ }</div>
+	<div class="main-container">
+		<div id="advertising">
+			Адаптивная верстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за 4 часа.*
+		</div>
+		<div id="footnote">
+			* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, в зависимости от&nbsp;сложности задач.
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="main-container">
+		<nav id="menu_footer">
+			<a href="#my_work"><div class="main-container__menu service" id="service">Услуги</div></a>
+			<a href="#my_projects"><div class="main-container__menu portfolio-footer">Портфолио</div></a>
+			<a href="#Price"><div class="main-container__menu cost-footer">Стоимость</div></a>
+		</nav>
+		<div id="contacts">
+			<a href="tel:+79170413038"><i class="fas fa-phone" id="phone_icon"></i>+79170413038</a>
+			<a href="mailto:miroga64@gmail.com?subject=Вопрос по HTML"> <i class="fas fa-envelope" id="mail_icon"></i>miroga64@gmail.com</a>
+		</div>
+		<div id="social">
+			<button class=" main-container__order-call">Заказать звонок</button>
+			<div id="social_net">
+				<a href="https://vk.com/id50410469" id="vk"></a>
+				<a href="#my_projects" id="facebook"></a>
+				<a href="#" id="twitter"></a>
+				<a href="https://www.instagram.com/miroga63/" id="instagram"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div id="copyright">
+	<div class="main-container">
+	©Гайсин Михаил 2019-2020	
+	</div>
+</div>
+</body>
+</html>
